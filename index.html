@@ -503,18 +503,22 @@
             <textarea class="input-comment" placeholder="Wprowadź tekst">
             </textarea>
           </label>
-          <div class="checkbox-modal">
-            <input
-              class="input-checkbox"
-              type="checkbox"
-              id="check"
-              name="check"
-              value="1"
-            />
-            Oświadczam iż akceptuję
-            <a class="link-checkbox" href="#">Regulamin</a> i
-            <a class="link-checkbox" href="#">Politykę Prywatności.</a>
-            <label class="label-checkbox" for="check"></label>
+          <div>
+            <label class="label-checkbox" for="check">
+              <input
+                class="input-checkbox"
+                type="checkbox"
+                id="check"
+                name="check"
+                value="1"
+              />
+              <svg class="icon-label-checkbox" width="11" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              Oświadczam iż akceptuję
+              <a class="link-checkbox" href="#">Regulamin</a> i
+              <a class="link-checkbox" href="#">Politykę Prywatności.</a>
+            </label>
           </div>
           <button class="button-modal" type="submit">Wyślij</button>
         </form>
