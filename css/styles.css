@@ -488,6 +488,7 @@ ul {
   padding: 15px;
   width: 358px;
   margin-right: 12px;
+  color: var(--white-color);
 }
 .submit-send {
   background-color: var(--hover-color);
@@ -588,6 +589,7 @@ ul {
   padding: 13px;
   align-items: center;
   padding-left: 42px;
+  cursor: pointer;
 }
 .input-label:hover,
 .input-label:focus-within {
@@ -612,6 +614,8 @@ ul {
   align-items: center;
   resize: none;
   margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
 }
 .input-comment:hover,
 .input-comment:focus {
