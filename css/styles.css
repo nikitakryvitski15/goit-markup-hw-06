@@ -195,10 +195,7 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
+.icons-lorem {
   width: 270px;
   height: 120px;
 }
@@ -321,18 +318,16 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .companies-clients:hover,
 .companies-clients:focus {
-  cursor: pointer;
   border: 1px solid var(--hover-color);
   fill: var(--hover-color);
 }
 /* Style dla portfolio.html */
 .button-list {
   justify-content: center;
-  font-size: 16px;
-  line-height: 1.6;
   color: var(--brand-color);
   display: flex;
   column-gap: 8px;
@@ -341,14 +336,13 @@ ul {
 /* Style dla przycisków w portfolio.html */
 .button-port {
   border: none;
+  font-size: 16px;
   border-radius: 4px;
   color: var(--brand-color);
   font-family: var(--font-primary);
   font-weight: 500;
+  line-height: 1.6;
   padding: 6px 22px 6px 22px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-port:hover,
 .button-port:focus {
@@ -361,6 +355,7 @@ ul {
 /* Style dla kart portfolio.html  */
 .container-card {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -424,9 +419,7 @@ ul {
 }
 .container-footer {
   display: flex;
-}
-.contacts-footer {
-  padding: 60px;
+  justify-content: space-between;
 }
 .studio2 {
   color: var(--white-color);
@@ -450,7 +443,7 @@ ul {
   padding-top: 9px;
 }
 .join-footer {
-  margin-top: 72px;
+  margin-top: 12px;
 }
 .text-join {
   font-family: var(--font-primary);
@@ -479,26 +472,18 @@ ul {
 .social-media-links:hover,
 .social-media-links:focus {
   background-color: var(--hover-color);
-  cursor: pointer;
 }
 .icon-footer {
   fill: var(--white-color);
 }
 .mail-footer {
-  padding: 13px 8px 13px 24px;
+  margin-top: 12px;
 }
 .input-mail {
   margin-top: 20px;
-  margin-bottom: 94px;
   border: 1px solid #ffffff4d;
   box-shadow: 0px 4px 4px 0px #00000026;
   border-radius: 4px;
-  background: linear-gradient(
-      0deg,
-      rgba(33, 150, 243, 0),
-      rgba(33, 150, 243, 0)
-    ),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
   background: #2f303a;
   padding: 15px;
   width: 358px;
@@ -529,7 +514,6 @@ ul {
   line-height: 1.14;
   color: var(--white-color);
   letter-spacing: 0.06rem;
-  margin-top: 60px;
 }
 .icon-send {
   margin-left: 24px;
@@ -606,11 +590,17 @@ ul {
   padding-left: 42px;
 }
 .input-label:hover,
-.input-label:focus {
-  border-color: var(--hover-color);
-  transition-property: color;
+.input-label:focus-within {
+  border: 1px solid var(--hover-color);
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.input-label:hover + .icon-label,
+.input-label:focus + .icon-label {
+  fill: var(--hover-color);
+  outline: none;
 }
 .input-comment {
   border: 1px solid #21212133;
